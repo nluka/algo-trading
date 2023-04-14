@@ -1,0 +1,6 @@
+*.bak
+*.ini
+*.pyc
+*.csv
+src/__pycache__/
+out.txt
