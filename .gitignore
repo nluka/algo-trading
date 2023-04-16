@@ -4,3 +4,4 @@
 *.csv
 src/__pycache__/
 out.txt
+*.pickle
