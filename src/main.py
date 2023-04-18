@@ -304,7 +304,7 @@ if __name__ == '__main__':
     cerebro.addstrategy(TestStrategy)
 
     all_symbols_raw = []
-    with open('tickers.txt') as f:
+    with open('tickers2.txt') as f:
         all_symbols_raw = f.read().splitlines()
     for sym in all_symbols_raw:
         if sym in bad_symbols:
