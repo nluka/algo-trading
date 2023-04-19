@@ -224,7 +224,7 @@ class TestStrategy(bt.Strategy):
                 all_idx = all_symbols.index(held_symbol)
                 self.sell_stock(all_idx=all_idx)
 
-        num_stocks_to_buy = self.hold_count - len(self.held_stocks)
+        num_stocks_to_buy = min(self.hold_count - len(self.held_stocks), len(momentums))
         if (num_stocks_to_buy == 0):
             return
 
